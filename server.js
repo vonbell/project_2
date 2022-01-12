@@ -5,6 +5,7 @@ const methodOverride = require('method-override');
 const expressSession = require('express-session');
 
 const usersController = require('./controllers/users');
+const usersContentController = require('./controllers/usersContent');
 const app = express();
 require('dotenv').config();
 
@@ -36,7 +37,7 @@ app.use(function(req, res, next) {
 });
 
 // CONTROLLERS
-// app.use('/', indexController);
+app.use('/', usersContentController);
 app.use('/', usersController);
 
 // Listener

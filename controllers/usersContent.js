@@ -4,7 +4,7 @@ const Content = require('../models/userContent');
 
 // INDEX
 contentRouter.get('/', (req, res) => {
-    res.render('home');
+    res.render('index');
 });
 
 module.exports = contentRouter;
