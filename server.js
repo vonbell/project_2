@@ -1,10 +1,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan')
-const methodOverride = require('method-override');
 const expressSession = require('express-session');
+const methodOverride = require('method-override');
 
-const usersController = require('./controllers/users');
+// const usersController = require('./controllers/users');
 const usersContentController = require('./controllers/usersContent');
 const app = express();
 require('dotenv').config();
@@ -22,7 +22,6 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 
 // MIDDLEWARE
 app.use(express.static('public'));
-app.use(methodOverride('_method'));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
 app.use(expressSession({
@@ -30,15 +29,16 @@ app.use(expressSession({
     resave: false,
     saveUninitialized: false
 }));
+app.use(methodOverride('_method'));
 
-app.use(function(req, res, next) {
-    console.log('Session Store: ', req.session);
-    next();
-});
+// app.use(function(req, res, next) {
+//     console.log('Session Store: ', req.session);
+//     next();
+// });
 
 // CONTROLLERS
 app.use('/', usersContentController);
-app.use('/', usersController);
+// app.use('/', usersController);
 
 // Listener
 app.listen(PORT, () => console.log(`server is listening on port: ${PORT}`));

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finsta</title>
+</head>
+<body>
+    <h1>Edit post</h1>
+    <div>
+        <p><%= post.name; %></p>
+        <img src="<%=post.img; %>" alt="Finsta pic">
+    </div>
+
+    <form action="/<%= post._id %>?_method=PUT" method="POST">
+      Caption: <input type="text" name="caption" value="<%=post.caption%>" /><br />
+      <input type="submit" value="Submit Changes" />
+    </form>
+
+    <nav>
+        <a href="/">Cancel</a>
+    </nav>
+</body>
+</html>

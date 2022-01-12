@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finsta</title>
+</head>
+
+<body>
+    <%- include('./partials/header') %>
+        <article>
+            <div>
+                <ul>
+                    <% posts.forEach(post=> { %>
+                        <li>
+                            <div>
+                                <a href="/<%=post._id; %>"><%= post.name %></a><br>
+                                <a href="/<%= post._id %>/edit">Edit</a>
+                                <form action="/<%=post.id%>?_method=DELETE" method="POST" style="display:inline;">
+                                    <input type="submit" value="DELETE" />
+                                </form>
+                            </div>
+                            <div>
+                                <img src="<%= post.img %>" alt="Finsta post" height="500px" width="500px"></a><br>
+                            </div>
+                            <div>
+                                <p><%= post.caption %></p>
+                            </div>
+                        </li>
+                    <% }); %>
+                </ul>
+            </div>
+        </article>
+</body>
+
+</html>
