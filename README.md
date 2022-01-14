@@ -40,5 +40,5 @@ Finsta was created to mimic Instagram
 [Heroku](https://compapp21.netlify.app)
 
 * You can view the repository:
-[Github.com](https://github.com/Gr8ness21/compApp)
+[Github.com](https://github.com/vonbell/project_2)
 * If unable to view run npm run dev in terminal
