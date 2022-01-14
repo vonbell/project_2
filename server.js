@@ -11,6 +11,7 @@ require('dotenv').config();
 
 app.set('view engine', 'ejs');
 
+
 const { PORT, DATABASE_URL, SECRET } = process.env;
 
 mongoose.connect(DATABASE_URL);
@@ -30,6 +31,8 @@ app.use(expressSession({
     saveUninitialized: false
 }));
 app.use(methodOverride('_method'));
+
+
 
 // app.use(function(req, res, next) {
 //     console.log('Session Store: ', req.session);

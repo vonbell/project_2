@@ -1,0 +1,125 @@
+/* #dots {
+    background-color: #edeef6;
+    color: black;
+    border: none;
+}
+
+.modal-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vh;
+}
+
+.modal_container.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 384px;
+    max-width: 100%;
+    text-align: center;
+} */
+
+/* . for class - # for id */
+/* * {
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #edeef6;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* HEADER */
+#header-nav {
+    column-count: 2;
+    height: 50px;
+    border-bottom: 0.5px solid grey;
+}
+
+.header-home {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 150px 0 0;
+    padding-top: 10px;
+    gap: 1rem;
+}
+
+#home-pic, #new-post-pic, #edit-pic, #delete-pic {
+    border-radius: 50%;
+}
+
+#finsta-logo {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 500px 0 250px;
+    font-size: 20px;
+    color: black;
+}
+
+/* HOME */
+ul {
+    display: grid;
+    column-count: 1;
+    list-style-type: none;
+    width: 300px;
+    margin: 0 375px 0 375px;
+}
+
+#full-post {
+    display: grid;
+    width: 614px;
+    border: 0.5px solid grey;
+    margin-top: 2rem;
+}
+
+.post-header-bar {
+    column-count: 2;
+    height: 60px;
+}
+
+#edit-delete {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10px 0 0;
+    padding-top: 15px;
+    gap: 0.4rem;
+}
+
+#avi-username {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 0 20px;
+    padding-top: 15px;
+    gap: 1.3rem;
+}
+
+.username {
+    padding-top: 6px;
+    font-weight: 550;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#caption {
+    display: flex;
+    margin: 0 0 0 20px;
+    gap: 0.4rem;
+}
+
+/* SHOW */

@@ -49,15 +49,21 @@ contentRouter.post('/', (req, res) => {
 // EDIT
 contentRouter.get('/:id/edit', (req, res) => {
 	Content.findById(req.params.id, (err, post) => {
-		res.render('edit.ejs', { post });
+		res.render('edit', { post });
 	});
 });
 
 // SHOW
 contentRouter.get('/:id', (req, res) => {
-	Content.findById(req.params.id, (err, content) => {
-		res.render('show.ejs', { content });
+	Content.findById(req.params.id, (err, post) => {
+		res.render('show', { post });
 	});
 });
+// contentRouter.get('/:id', (req, res) => {
+// 	Content.find({}, (err, allContent) => {
+// 		res.render('show', { allContent });
+// 	});
+// });
+
 
 module.exports = contentRouter;
