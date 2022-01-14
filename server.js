@@ -1,7 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
-const morgan = require('morgan')
-const expressSession = require('express-session');
+const morgan = require('morgan');
 const methodOverride = require('method-override');
 
 // const usersController = require('./controllers/users');
@@ -12,7 +11,7 @@ require('dotenv').config();
 app.set('view engine', 'ejs');
 
 
-const { PORT, DATABASE_URL, SECRET } = process.env;
+const { PORT, DATABASE_URL } = process.env;
 
 mongoose.connect(DATABASE_URL);
 
@@ -25,19 +24,8 @@ db.on('disconnected', () => console.log('mongo disconnected'));
 app.use(express.static('public'));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
-app.use(expressSession({
-    secret: SECRET,
-    resave: false,
-    saveUninitialized: false
-}));
 app.use(methodOverride('_method'));
 
-
-
-// app.use(function(req, res, next) {
-//     console.log('Session Store: ', req.session);
-//     next();
-// });
 
 // CONTROLLERS
 app.use('/', usersContentController);
