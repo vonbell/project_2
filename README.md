@@ -1,9 +1,11 @@
 # Finsta
 
 #### A full crud web app designed to share media.
-<img src="./recents/project_2_posts.png" alt=""/>
-<img src="./recents/project_2_show.png" alt="Show Page"/>
-<img src="./recents/project_2_index.png" alt="Index Page"/>
+<img src="./images/home.png" alt="Show Page"/>
+<img src="./images/profile.png" alt="Index Page"/>
+<img src="./images/project_2_posts.png" alt=""/>
+<img src="./images/project_2_show.png" alt="Show Page"/>
+<img src="./images/project_2_index.png" alt="Index Page"/>
 
 ## Description
 Finsta was created to mimic Instagram
