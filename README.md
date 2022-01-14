@@ -16,7 +16,6 @@ Finsta was created to mimic Instagram
 * [Design](#design)
 * [Project Next Steps](#nextsteps)
 * [Deployed App](#deployment)
-* [About the Author](#author)
 
 ## <a name="technologiesused"></a>Technologies Used
 * JavaScript
@@ -39,8 +38,8 @@ Finsta was created to mimic Instagram
 * Users can like and leave comments on posts
 
 ## <a name="deployment"></a>Deployed Link
-[Heroku](https://compapp21.netlify.app)
+[Heroku](https://finsta-vonb.herokuapp.com/)
 
 * You can view the repository:
-[Github.com](https://github.com/Gr8ness21/compApp)
+[Github.com](https://github.com/vonbell/project_2)
 * If unable to view run npm run dev in terminal
