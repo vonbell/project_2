@@ -1,9 +1,9 @@
-# The Competition App
+# Finsta
 
 #### A full crud web app designed to share media.
-<img src="./Images/comp1.png" alt="Home Page Welcome Screen"/>
-<img src="./Images/comp2.png" alt="City Page"/>
-<img src="./Images/comp3.png" alt="Park Page"/>
+<img src="./recents/project_2_posts.png" alt=""/>
+<img src="./recents/project_2_show.png" alt="Show Page"/>
+<img src="./recents/project_2_index.png" alt="Index Page"/>
 
 ## Description
 Finsta was created to mimic Instagram
