@@ -13,7 +13,7 @@
     <%- include('./partials/header') %>
     <ul>
     <% posts.forEach(post=> { %>
-        <li id="full-post">
+        <li class="full-post">
 
             <nav class="post-header-bar">
                 <div id="avi-username">
@@ -30,7 +30,7 @@
             </nav>
             
             <div>
-                <img src="<%= post.img %>" alt="Finsta post" height="614" width="614" id="post-img">
+                <img src="<%= post.img %>" alt="Finsta post" height="614" width="614" class="post-img">
             </div>
 
             <div id="caption">

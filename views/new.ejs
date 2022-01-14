@@ -9,15 +9,21 @@
 </head>
 <body>
     <%- include('./partials/header') %>
-    <h1>Add post</h1>
-    <form action="/" method="POST">
-        Name: <input type="text" name="name" /><br />
-        Image: <input type="text" name="img" /><br />
-        Caption: <input type="text" name="caption" /><br />
-        <input type="submit" value="SUBMIT">
-    </form>
-    <nav>
-        <a href="/">Cancel</a>
-    </nav>
+    <main class="whole-new">
+
+        <h2>Add post</h2>
+        
+        <form action="/" method="POST">
+            Name: <input type="text" name="name" /><br />
+            Image: <input type="text" name="img" /><br />
+            Caption: <input type="text" name="caption" /><br />
+            <input type="submit" value="SUBMIT">
+        </form>
+
+        <nav>
+            <a href="/">Cancel</a>
+        </nav>
+
+    </main>
 </body>
 </html>

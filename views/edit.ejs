@@ -8,19 +8,26 @@
     <title>Finsta</title>
 </head>
 <body>
-    <h1>Edit post</h1>
-    <div>
-        <p><%= post.name; %></p>
-        <img src="<%=post.img; %>" alt="Finsta pic">
-    </div>
+    <%- include('./partials/header') %>
 
-    <form action="/<%= post._id %>?_method=PUT" method="POST">
-      Caption: <input type="text" name="caption" value="<%=post.caption%>" /><br />
-      <input type="submit" value="Submit Changes" />
-    </form>
+    <main class="edit-post">
 
-    <nav>
-        <a href="/">Cancel</a>
-    </nav>
+        <div id="edit-head-bar">
+            <h2>Edit post</h2>
+            <p><%= post.name; %></p>
+        </div>
+        <img src="<%=post.img; %>" alt="Finsta pic" height="614" width="614" class="post-img">
+        
+        <form action="/<%= post._id %>?_method=PUT" method="POST">
+        Caption: <input type="textarea" name="caption" value="<%=post.caption%>" /><br />
+        <input type="submit" value="Submit Changes" />
+        </form>
+
+        <nav>
+            <a href="/">Cancel</a>
+        </nav>
+
+    </main>
+
 </body>
 </html>

@@ -57,7 +57,7 @@ body {
     gap: 1rem;
 }
 
-#home-pic, #new-post-pic, #edit-pic, #delete-pic {
+#home-pic, #new-post-pic, #edit-pic, #delete-pic, #profile-avi {
     border-radius: 50%;
 }
 
@@ -78,7 +78,7 @@ ul {
     margin: 0 375px 0 375px;
 }
 
-#full-post {
+.full-post {
     display: grid;
     width: 614px;
     border: 0.5px solid grey;
@@ -123,3 +123,55 @@ a {
 }
 
 /* SHOW */
+#whole-profile {
+    display: grid;
+    width: 975px;
+    column-count: 1;
+    margin: 0 200px 0 200px;
+}
+
+#profile-header {
+    display: flex;
+    /* column-count: 2; */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#profile-avi {
+    margin-left: 100px;
+}
+
+#username-bio {
+    margin-left: 130px;
+}
+
+#post {
+    display: flex;
+    justify-content: center;
+    border-top: 0.5px solid grey;
+}
+
+/* NEW */
+.whole-new {
+    display: grid;
+    width: 300px;
+    column-count: 1;
+    margin: 3rem 375px 0 500px;
+    border: 0.5px solid grey;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* EDIT */
+.edit-post {
+    display: grid;
+    width: 614px;
+    border: 0.5px solid grey;
+    margin: 2rem 375px 0 375px;
+}
+
+#edit-head-bar {
+    height: 60px;
+}

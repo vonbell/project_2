@@ -9,19 +9,24 @@
 </head>
 <body>
     <%- include('./partials/header') %>
-    <% console.log(post) %>
-    <main>
-        <header>
-            <div class="profile-avi">
-                <img src="<%= post.avi %>" alt="<%= post.name %>" height="150" width="150" style="border-radius: 50%;">
+
+    <main id="whole-profile">
+        <header id="profile-header">
+            <div id="avi-section">
+                <img src="<%= post.avi %>" alt="<%= post.name %>" height="150" width="150" id="profile-avi">
             </div>
-            <section>
-                <h2><%= post.name %></h2>
-                <h2><%= post.bio %></h2>
-            </section>
+            <div id="username-bio">
+                <h3><%= post.name %></h3>
+                <h4><%= post.bio %></h4>
+            </div>
         </header>
 
-        <div class="profile-content">
+        <div id="post">
+            <p><img src="https://www.seekpng.com/png/detail/294-2945990_there-is-a-square-grid-icon.png" alt="post image" height="12" width="12"></p>
+            <p>Posts</p>
+        </div>
+
+        <div class="profile-gallery">
             <img src="<%= post.img %>" alt="<%= post.name %>" height="293" width="293">
         </div>
 
