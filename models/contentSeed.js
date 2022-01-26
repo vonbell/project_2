@@ -3,13 +3,13 @@ module.exports = [
       name: 'vonb',
       avi: 'https://pbs.twimg.com/profile_images/1450158881968119813/nSrf-BSR_400x400.jpg',
       bio: 'I am him',
-      img: 'https://snobmonkey.com/wp-content/uploads/2019/04/grid-cell-11605-1405098381-0-1024x585.jpg',
+      img: 'https://images.unsplash.com/photo-1643008401979-7cdfd3f4f0f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1588&q=80',
       caption: 'Life is the biggest party you will ever be at',
     }, {
       name: 'vonb',
       avi: 'https://pbs.twimg.com/profile_images/1450158881968119813/nSrf-BSR_400x400.jpg',
       bio: 'I am him',
-      img: 'https://cdn.booooooom.com/wp-content/uploads/2013/11/bestofinstagram-04.jpg',
+      img: 'https://images.unsplash.com/photo-1641977937814-160ab3062a23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80',
       caption: 'An apple a day will keep anyone away if you throw it hard enough',
     }, {
       name: 'vonb',
