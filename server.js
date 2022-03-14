@@ -21,10 +21,10 @@ db.on('connected', () => console.log('mongo connected'));
 db.on('disconnected', () => console.log('mongo disconnected'));
 
 // MIDDLEWARE
-app.use(express.static('public'));
+app.use(methodOverride('_method'));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'));
+app.use(express.static('public'));
 
 
 // CONTROLLERS
