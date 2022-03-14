@@ -33,7 +33,13 @@ body {
     color: black;
 } */
 
+/* ******************************************************************* */
 /* HOME */
+/* ******************************************************************* */
+
+
+
+
 /* ul {
     display: grid;
     column-count: 1;
@@ -42,7 +48,7 @@ body {
     margin: 0 375px 0 375px;
 } */
 
-.full-post {
+/* .full-post {
     display: grid;
     width: 614px;
     border: 0.5px solid grey;
@@ -84,7 +90,7 @@ a {
     display: flex;
     margin: 0 0 0 20px;
     gap: 0.4rem;
-}
+} */
 
 /* SHOW */
 #whole-profile {
