@@ -7,93 +7,17 @@ body {
 /* HEADER */
 /* ******************************************************************* */
 
-/* #header-nav {
-    column-count: 2;
-    height: 50px;
-    border-bottom: 0.5px solid grey;
-} */
-
-/* .header-home {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 150px 0 0;
-    padding-top: 10px;
-    gap: 1rem;
-} */
-
-/* #home-pic, #new-post-pic, #edit-pic, #delete-pic, #profile-avi {
-    border-radius: 50%;
-} */
-
-/* #finsta-logo {
-    display: flex;
-    justify-content: flex-start;
-    margin: 10px 500px 0 250px;
-    font-size: 20px;
-    color: black;
-} */
 
 /* ******************************************************************* */
 /* HOME */
 /* ******************************************************************* */
 
-
-
-
-/* ul {
-    display: grid;
-    column-count: 1;
-    list-style-type: none;
-    width: 300px;
-    margin: 0 375px 0 375px;
-} */
-
-/* .full-post {
-    display: grid;
-    width: 614px;
-    border: 0.5px solid grey;
-    margin-top: 2rem;
+.index-username {
+    margin-top: .5rem;
 }
-
-.post-header-bar {
-    column-count: 2;
-    height: 60px;
-}
-
-#edit-delete {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0 10px 0 0;
-    padding-top: 15px;
-    gap: 0.4rem;
-}
-
-#avi-username {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0 0 0 20px;
-    padding-top: 15px;
-    gap: 1.3rem;
-}
-
-.username {
-    padding-top: 6px;
-    font-weight: 550;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-#caption {
-    display: flex;
-    margin: 0 0 0 20px;
-    gap: 0.4rem;
-} */
 
 /* SHOW */
-#whole-profile {
+/* #whole-profile {
     display: grid;
     width: 975px;
     column-count: 1;
@@ -102,7 +26,6 @@ a {
 
 #profile-header {
     display: flex;
-    /* column-count: 2; */
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
@@ -119,10 +42,10 @@ a {
     display: flex;
     justify-content: center;
     border-top: 0.5px solid grey;
-}
+} */
 
 /* NEW */
-.whole-new {
+/* .whole-new {
     display: grid;
     width: 300px;
     column-count: 1;
@@ -132,10 +55,10 @@ a {
 
 h2 {
     text-align: center;
-}
+} */
 
 /* EDIT */
-.edit-post {
+/* .edit-post {
     display: grid;
     width: 614px;
     border: 0.5px solid grey;
@@ -144,4 +67,4 @@ h2 {
 
 #edit-head-bar {
     height: 60px;
-}
+} */
