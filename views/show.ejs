@@ -6,26 +6,37 @@
 <body>
     <%- include('./partials/header') %>
 
-    <main id="whole-profile">
-        <header id="profile-header">
-            <div id="avi-section">
-                <img src="<%= post.avi %>" alt="<%= post.name %>" height="150" width="150" id="profile-avi">
+    <main class="row" id="show-top-row">
+        <div class="container">
+            <!-- Avi -->
+            <div class="col s3 m4 l3">
+                <div>
+                    <img class="responsive-img circle" src="<%= post.avi %>" alt="<%= post.name %>">
+                </div>
             </div>
-            <div id="username-bio">
-                <h3><%= post.name %></h3>
-                <h4><%= post.bio %></h4>
+
+            <!-- User and Bio -->
+            <div class="col s8 m8 l3">
+                <div>
+                    <p class="flow-text">"<%= post.name %>"</p>
+                    <p class="flow-text"><%= post.bio %></p>
+                </div>
             </div>
-        </header>
-
-        <div id="post">
-            <p><img src="https://www.seekpng.com/png/detail/294-2945990_there-is-a-square-grid-icon.png" alt="post image" height="12" width="12"></p>
-            <p>Posts</p>
         </div>
-
-        <div class="profile-gallery">
-            <img src="<%= post.img %>" alt="<%= post.name %>" height="293" width="293">
-        </div>
-
     </main>
+
+    <main class="row">
+        <div class="container">
+            <hr>
+            <div class="col s12 m12 l3 center">
+                <p><img src="https://www.seekpng.com/png/detail/294-2945990_there-is-a-square-grid-icon.png" alt="post image" height="12" width="12"> Posts</p>
+            </div>
+            
+            <div class="col s4 m4 l6 offset-l3">
+                <img class="responsive-img" src="<%= post.img %>" alt="<%= post.name %>">
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>

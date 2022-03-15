@@ -12,37 +12,22 @@ body {
 /* HOME */
 /* ******************************************************************* */
 
+
 .index-username {
     margin-top: .5rem;
 }
 
+/* ******************************************************************* */
 /* SHOW */
-/* #whole-profile {
-    display: grid;
-    width: 975px;
-    column-count: 1;
-    margin: 0 200px 0 200px;
-}
+/* ******************************************************************* */
 
-#profile-header {
-    display: flex;
+#show-top-row {
     margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
-#profile-avi {
-    margin-left: 100px;
+hr {
+    border: solid #EDA6A4;
 }
-
-#username-bio {
-    margin-left: 130px;
-}
-
-#post {
-    display: flex;
-    justify-content: center;
-    border-top: 0.5px solid grey;
-} */
 
 /* NEW */
 /* .whole-new {
