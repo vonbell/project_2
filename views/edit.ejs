@@ -6,23 +6,25 @@
 <body>
     <%- include('./partials/header') %>
 
-    <main class="edit-post">
+    <main class="row">
+        <div class="container">
 
-        <div id="edit-head-bar">
-            <h2>Edit post</h2>
-            <p><%= post.name; %></p>
+            <div id="edit-head-bar">
+                <h2>Edit post</h2>
+                <h4><%= post.name; %></h4>
+            </div>
+            <img src="<%=post.img; %>" alt="Finsta pic" class="responsive-img">
+            
+            <form action="/<%= post._id %>?_method=PUT" method="POST">
+            Caption: <input type="textarea" name="caption" value="<%=post.caption%>" /><br />
+            <input class="waves-effect waves-light btn" type="submit" value="Done" />
+            </form>
+    
+            <div>
+                <a class="black-text" href="/">Cancel</a>
+            </div>
+
         </div>
-        <img src="<%=post.img; %>" alt="Finsta pic" height="614" width="614" class="post-img">
-        
-        <form action="/<%= post._id %>?_method=PUT" method="POST">
-        Caption: <input type="textarea" name="caption" value="<%=post.caption%>" /><br />
-        <input type="submit" value="Submit Changes" />
-        </form>
-
-        <nav>
-            <a href="/">Cancel</a>
-        </nav>
-
     </main>
 
 </body>

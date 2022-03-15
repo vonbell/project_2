@@ -42,7 +42,7 @@ contentRouter.put('/:id', (req, res) => {
 // CREATE
 contentRouter.post('/', (req, res) => {
     Content.create(req.body, (err) => {
-		res.redirect('/:id');
+		res.redirect('/');
 	});
 });
 

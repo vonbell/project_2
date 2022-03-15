@@ -5,21 +5,24 @@
 
 <body>
     <%- include('./partials/header') %>
-    <main class="whole-new">
+    <main class="row">
+        <div class="container">
 
-        <h2>Add post</h2>
-        
-        <form action="/" method="POST">
-            Name: <input type="text" name="name" /><br />
-            Image: <input type="text" name="img" /><br />
-            Caption: <input type="text" name="caption" /><br />
-            <input type="submit" value="SUBMIT">
-        </form>
+            <h2>New post</h2>
+            
+            <form action="/" method="POST">
+                Name: <input type="text" name="name" /><br />
+                Avi: <input type="text" name="avi" /><br />
+                Bio: <input type="text" name="bio" /><br />
+                Image: <input type="text" name="img" /><br />
+                Caption: <input type="text" name="caption" /><br />
+                <input class="waves-effect waves-light btn" type="submit" value="Share">
+            </form>
 
-        <nav>
-            <a href="/">Cancel</a>
-        </nav>
-
+            <div>
+                <a class="black-text" href="/">Cancel</a>
+            </div>
+        </div>
     </main>
 </body>
 </html>
